@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.cabecalho{
+    background: rgb(253, 130, 171);
+    padding: 3em;
+    margin: 0.5;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1{
+    padding-bottom: 3rem;
+    font-size: 50px;
+}
+input{
+    border: none;
+    border-radius: 7px;
+    width: 75%;
+    padding: 0.5m;
+    font-size: 1.5em;
+    outline: none;
+}
+button{
+    padding: 0.5em;
+    width: 20%;
+    margin-left: 20px;
+    background: rgb(0, 255, 221);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+button:hover {
+    background: rgb(255, 251, 0);
+    box-shadow: 5px 5´x 5px black;
+}
+.flex{
+    display: flex;
+}
+#lista{
+    margin: 0.5em;
+}
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 10px 10px 43px;
+    background: #eee;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+:nth-child(4n){
+    color: rgb(0, 0, 0);
+}
+ul li:nth-child(even){
+    background: #f9f;
+}
+ul li:nth-child(odd){
+    background: #f9f5;
+}
+ul li.checado{
+    background: #6c75f8;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.checado::before{
+    content: "";
+    position: absolute;
+    border: 1px rgb(0, 255, 221) solid;
+    top: 10px;
+    left: 15px;
+    height: 15px;
+    width: 7px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.fechar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px;
+}
+.fechar:hover{
+    background: rgb(255, 101, 101);
+}
